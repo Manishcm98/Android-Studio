@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5F7FB">
+
+    <include
+        layout="@layout/homebar"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/float_add"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="641dp"
+        android:layout_marginStart="272dp"
+        android:src="@drawable/floatadd"
+        android:backgroundTint="#0E85FF"
+        tools:ignore="ContentDescription"/>
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/floatingButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:src="@drawable/ic_baseline_add"-->
+<!--        android:backgroundTint="#0E85FF"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--    </com.google.android.material.floatingactionbutton.FloatingActionButton>-->
+
+    <TextView
+        android:id="@+id/sites"
+        android:layout_width="65dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/sites"
+        android:textColor="#3C4857"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/cat"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/category"
+        android:textColor="#3C4857"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@+id/cat"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/cnt"
+        android:paddingBottom="6dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@drawable/bluecircle"/>
+
+    <Spinner
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:id="@+id/spinhm"
+        android:layout_toEndOf="@+id/count"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/pathh"/>
+
+    <View
+        android:layout_width="31dp"
+        android:layout_height="4dp"
+        android:background="#FFA222"
+        android:layout_below="@id/sites"
+        android:layout_marginStart="23dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_rs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        tools:listitem="@layout/siteitem"
+        android:layout_marginTop="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp" />
+
+</RelativeLayout>

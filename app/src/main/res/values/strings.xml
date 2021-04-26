@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Pass Manager</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="forgotpw">Forgot your password?</string>
+    <string name="or">OR</string>
+    <string name="usefp">USE YOUR FINGERPRINT TO LOGIN</string>
+    <string name="mobno">Mobile Number</string>
+    <string name="mpin">MPin</string>
+    <string name="emn">Enter Mobile Number</string>
+    <string name="efp">Enter 4 digit MPin</string>
+    <string name="refp">Re-Enter 4 digit MPin</string>
+    <string name="save">SAVE</string>
+    <string name="reset">RESET</string>
+    <string name="tv_url">URL</string>
+    <string name="tv_sitename">Site Name</string>
+    <string name="tv_folder">Sector/Folder</string>
+    <string name="tv_username">User Name</string>
+    <string name="tv_sitepw">Site Password</string>
+    <string name="tv_notes">Notes</string>
+    <string name="sitename">YouTube</string>
+    <string name="cpypw">Copy Password</string>
+    <string name="url">www.youtube.com</string>
+    <string name="sites">Sites</string>
+    <string name="category">Social Media</string>
+    <string name="edit">Edit</string>
+    <string name="upd">Update</string>
+    <string name="cnt">02</string>
+    <string name="search">Search</string>
+    <string name="cloud">Cloud</string>
+    <string name="profile">Profile</string>
+
+    <string-array name="folders">
+        <item>Social Media</item>
+        <item>E-Commerce</item>>
+    </string-array>
+</resources>

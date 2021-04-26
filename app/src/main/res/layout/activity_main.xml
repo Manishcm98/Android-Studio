@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E85FF">
+
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_width="176dp"
+        android:layout_height="204dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        tools:ignore="ContentDescription"/>
+
+</RelativeLayout>

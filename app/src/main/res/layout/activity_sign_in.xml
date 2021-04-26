@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#0E85FF">
+
+    <ImageView
+        android:layout_width="179dp"
+        android:layout_height="68dp"
+        android:src="@drawable/logo_sin"
+        android:layout_marginTop="39dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="131dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="27dp"
+            android:id="@+id/sign_in"
+            android:text="@string/sign_in"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="27dp"
+            android:id="@+id/sign_up"
+            android:text="@string/sign_up"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="98dp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="74dp"
+        android:layout_height="4dp"
+        android:background="#FFA222"
+        android:layout_marginTop="171dp"
+        android:layout_marginStart="48dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_mobno"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/corner"
+            android:hint="@string/mobno"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:maxLength="10"
+            android:textColor="#787E8C"
+            android:textColorHint="#787E8C" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleDrawable="@drawable/passwordtoggle">
+
+            <EditText
+                android:id="@+id/et_pw"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/corner"
+                android:hint="@string/mpin"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:paddingLeft="15dp"
+                android:textColor="#787E8C"
+                android:textColorHint="#787E8C" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/forgotpw"
+            android:layout_marginTop="27dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="130dp"
+            android:layout_height="54dp"
+            android:text="@string/sign_in"
+            android:textSize="18sp"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="40dp"
+            android:textColor="#0E85FF"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/fpsensor"
+        android:layout_width="63dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="580dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:src="@drawable/fingerprint_icon"
+        android:focusable="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="660dp">
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="29dp"
+            android:text="@string/or"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="249dp"
+            android:layout_height="29dp"
+            android:text="@string/usefp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginStart="25dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

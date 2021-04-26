@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/addbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:layout_width="44dp"
+            android:layout_height="24dp"
+            android:text="@string/tv_url"
+            android:textSize="22sp"
+            android:textColor="#949CA5"
+            android:layout_marginStart="5dp"/>
+
+        <EditText
+            android:id="@+id/et_url"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:background="#F5F7FB" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/tv_sitename"
+            android:textSize="22sp"
+            android:textColor="#949CA5"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="22dp"/>
+
+        <EditText
+            android:id="@+id/et_sname"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:background="#F5F7FB" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/tv_folder"
+            android:textSize="22sp"
+            android:textColor="#949CA5"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="22dp"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/tv_username"
+            android:textSize="22sp"
+            android:textColor="#949CA5"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="22dp"/>
+
+        <EditText
+            android:id="@+id/et_uname"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:background="#F5F7FB" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/tv_sitepw"
+            android:textSize="22sp"
+            android:textColor="#949CA5"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="22dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleDrawable="@drawable/passwordtoggle">
+
+            <EditText
+                android:id="@+id/et_pw"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="12dp"
+                android:background="#F5F7FB" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/tv_notes"
+            android:textSize="22sp"
+            android:textColor="#949CA5"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/et_notes"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:background="#F5F7FB"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:text="@string/reset"
+            android:textSize="20sp"
+
+            android:layout_weight="0.5"
+            android:backgroundTint="#0E85FF"/>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_marginStart="2dp"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:text="@string/save"
+            android:textSize="20sp"
+            android:layout_weight="0.5"
+            android:backgroundTint="#0E85FF"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="114dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    android:id="@+id/rowLayout"
+    android:layout_marginBottom="10dp"
+    app:cardElevation="1dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:id="@+id/rl">
+
+        <ImageView
+            android:id="@+id/imglogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/clipcopy"
+            android:src="@drawable/ic_baseline_content_copy_24"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="179dp"
+            android:layout_marginTop="42dp"
+            tools:ignore="ContentDescription" />
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"/>-->
+
+        <TextView
+            android:id="@+id/sitename"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/sitename"
+            android:textStyle="bold"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#0E85FF"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/cppw"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/cpypw"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#0E85FF"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/siteurl"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/url"
+            android:layout_marginTop="71dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#3C4857"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

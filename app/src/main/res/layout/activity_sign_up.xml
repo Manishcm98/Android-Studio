@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#0E85FF">
+
+    <ImageView
+        android:layout_width="179dp"
+        android:layout_height="68dp"
+        android:src="@drawable/logo_sin"
+        android:layout_marginTop="39dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="131dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="27dp"
+            android:id="@+id/sign_inup"
+            android:text="@string/sign_in"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="27dp"
+            android:id="@+id/sign_upup"
+            android:text="@string/sign_up"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="98dp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="74dp"
+        android:layout_height="4dp"
+        android:background="#FFA222"
+        android:layout_marginTop="171dp"
+        android:layout_marginStart="230dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_mobnoup"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/corner"
+            android:hint="@string/emn"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:maxLength="10"
+            android:textColor="#787E8C"
+            android:textColorHint="#787E8C"/>
+
+        <EditText
+            android:id="@+id/et_pwup"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/corner"
+            android:hint="@string/efp"
+            android:maxLength="4"
+            android:inputType="number"
+            android:textColorHint="#787E8C"
+            android:textColor="#787E8C"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="32dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleDrawable="@drawable/passwordtoggle">
+
+            <EditText
+                android:id="@+id/et_repwup"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/corner"
+                android:hint="@string/refp"
+                android:inputType="numberPassword"
+                android:textColor="#787E8C"
+                android:textColorHint="#787E8C"
+                android:maxLength="4"
+                android:layout_marginTop="32dp"
+                android:paddingLeft="15dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_signinup"
+            android:layout_width="130dp"
+            android:layout_height="54dp"
+            android:text="@string/sign_in"
+            android:textSize="18sp"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="40dp"
+            android:textColor="#0E85FF"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
